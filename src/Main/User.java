@@ -61,7 +61,6 @@ public class User {
         return greaterstring().length();
     }
     public String pincodeforwardtraverse(){
-        //int[] arr = getPincode();
         String a = String.valueOf(getPincode());
         int pincodelength = a.length();
         int stringlength = greaterstringlength();
@@ -74,16 +73,6 @@ public class User {
         else{
             return (a.substring(stringlength,stringlength+1));
         }
-/*
-        StringBuilder sb = new StringBuilder(getPincode());
-        int value = greaterstringlength();
-        if(greaterstringlength() > sb.length()){
-            int val = sb.length()-1;
-            return (sb.charAt(val));
-        }
-        else{
-            return sb.charAt(value);
-        }*/
     }
     public String pincodebackwardtraverse(){
         String sr = String.valueOf(getPincode());
